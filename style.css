@@ -1,0 +1,89 @@
+/* Temel font ayarları */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a); /* nonokrom siyah tonları */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* İçerik kutusu */
+.container {
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.05); 
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+}
+
+/* Başlık */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Paragraflar */
+p {
+  font-size: 1.1rem;
+  color: #dddddd;
+  line-height: 1.6;
+}
+
+/* Buton */
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #ffffff;
+  color: #111;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* Fade animasyon */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.fade-in-slow {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.heart {
+  width: 120px;
+  height: 120px;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
